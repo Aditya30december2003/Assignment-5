@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form ng-submit="signUp()" name="signUpForm" novalidate>
+        <input type="text" ng-model="user.firstName" required placeholder="First Name">
+        <!-- Add similar inputs for last name, email, phone number, and favorite menu item -->
+        <button type="submit">Submit</button>
+      </form>
+      <div ng-if="!userInfo">
+        Not Signed Up Yet. <a href="#/sign-up">Sign up Now!</a>
+      </div>
+      <div ng-if="userInfo">
+        <!-- Display user's information, including favorite menu item -->
+      </div>
+      
+      
+</body>
+</html>
